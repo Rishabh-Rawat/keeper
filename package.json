@@ -4,11 +4,13 @@
   "description": "",
   "keywords": [],
   "main": "src/index.js",
+  "homepage": "http://rishabh-rawat.github.io/keeper",
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@mui/icons-material": "^5.11.0",
     "@mui/material": "^5.11.4",
+    "gh-pages": "^5.0.0",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "react-scripts": "^3.2.0"
@@ -18,6 +20,8 @@
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
